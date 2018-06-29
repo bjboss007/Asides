@@ -12,7 +12,7 @@ picture = re.compile(r"(jpe?g)|(png)", re.IGNORECASE)
 archive = re.compile(r"(zip)|(tar)|(bz2)|(gz)|(rar)", re.IGNORECASE)
 part = re.compile(r"(part)", re.IGNORECASE)
 
-target_dir = os.path.join('/home','muhammad','Downloads')
+target_dir = ""
 def compiler(name):
     target_dir = name
     res = list(os.walk(target_dir))[0]
